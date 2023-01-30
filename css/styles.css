@@ -108,6 +108,14 @@ footer p {
     text-align: center;
 }
 
+.copyright a {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5rem;
+    color: rgb(129, 118, 118);
+
+}
+
 
 
 /* ============ Media Query ============ */
