@@ -8,6 +8,21 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --background-color: #081D32;
+    --font-color: #FDFDFD;
+    --secondary-color: #175392;
+    --faded-blue: #113C69;
+    --socials-color: rgb(129, 118, 118);
+    --github-color: #7A007A;
+    --twitter-color: #00acee;
+    --linkedin-color: #0A66C2;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
 
 h1 {
     margin-top: 1rem;
@@ -19,6 +34,11 @@ textarea {
     height: 80px;
     width: 800px;
     margin: 0.5rem auto;
+    background-color: var(--faded-blue);
+    color: var(--font-color);
+    padding: 0.3rem 0 0 0.3rem;
+    font-size: larger;
+    border-color: var(--secondary-color);
 }
 
 button {
@@ -29,11 +49,12 @@ button {
     margin: 0.5rem auto;
     padding: 1rem 0.5rem;
     font-size: large;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border: 2px solid var(--faded-blue);
 }
 
 button:hover {
-    box-shadow: 4px 4px #333333;
+    box-shadow: 4px 4px var(--secondary-color);
 }
 
 #output-title {
@@ -51,6 +72,9 @@ button:hover {
     border: 1px solid black;
     overflow-y: scroll;
     font-family: 'Aboreto', cursive;
+    background-color: var(--faded-blue);
+    border-color: var(--secondary-color);
+    border-width: 2px;
 }
 
  /* Hide scrollbar for Chrome, Safari and Opera */
@@ -65,7 +89,8 @@ button:hover {
   }
 
 a {
-    color: #333333;
+    /* color: #333333; */
+    color: var(--socials-color);
     text-align: center;
     margin: 0 1rem;
     text-decoration: none;
@@ -74,17 +99,20 @@ a {
 
 .bxl-github:hover {
     /* color: #4078c0; */
-    color: rgb(129, 118, 118);
+    /* color: rgb(129, 118, 118); */
+    color: var(--github-color);
     transform: scale(110%);
 }
 .bxl-twitter:hover {
     /* color: #1DA1F2; */
-    color: rgb(129, 118, 118);
+    /* color: rgb(129, 118, 118); */
+    color: var(--twitter-color);
     transform: scale(110%);
  }
 .bxl-linkedin-square:hover {
     /* color: #0A66C2; */
-    color: rgb(129, 118, 118);
+    /* color: rgb(129, 118, 118); */
+    color: var(--linkedin-color);
     transform: scale(110%);
 }
 
